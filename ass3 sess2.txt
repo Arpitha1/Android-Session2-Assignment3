@@ -1,0 +1,50 @@
+public class assignments {
+	
+	public static void main(String[] args) {
+		char c;
+
+		for (int p = 1; p <= 3;p++)//declaring for loop
+		{
+		c = 'a';                  // assigning char c to a
+		for (int q = p; q < 3;q++) 
+		{
+		System.out.print(" ");
+		}
+		for (int r = 1; r <= p;r++)
+		{
+		System.out.print(c);
+		++c;               //char a increments to b and in next loop b to c
+		}
+		--c;   --c;       //char decrements by 2 steps
+		for (int l = 1; l < p;l++)
+		{
+		System.out.print(c);
+		--c;                
+		}
+		System.out.println();
+		}
+          // other for loop to print lower part of the pattern
+		for (int p = 1; p < 3;p++)
+		{
+		c = 'a';
+		for (int q = 1; q <= p; q++)
+		{
+		System.out.print(" ");
+		}
+		for (int r = 1; r <= 3 - p;r++) 
+		{
+		System.out.print(c);
+		++c;
+		}
+		--c;
+		--c;
+		for (int l = 1; l < 3 - p; ++l) 
+		{
+		System.out.print(c);
+		--c;
+		}
+		System.out.println();
+		}
+		}
+
+	}
